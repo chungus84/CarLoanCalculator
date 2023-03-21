@@ -11,6 +11,9 @@ public class CarLoanCalculator {
             System.out.println("Error! You must take out a valid car loan.");
         } else if (downPayment > carLoan) {
             System.out.println("The car can be payed in full");
+        } else {
+            int remainingBalance = carLoan - downPayment;
+            int months = loanLength * 12;
         }
     }
 }
